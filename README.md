@@ -12,10 +12,10 @@ I use these technologies in my daily work, so I'm more comfortable with it right
 I created a docker container to easily launch the application. Just fill in the environment file (provided for simplicity in this case) and build the image.
 
 ```sh
-docker build -t bcm_test .
+docker build -t planete_oui_test .
 ```
 Then just launch the container with the following command (by correctly entering the arguments)
 
 ```sh
-docker run --rm --env-file .env.dev bcm_test -f "16-06-2021" -t "17.06.2021" -o "json"
+docker run --rm --env-file .env.dev planete_oui_test -f "16-06-2021" -t "17.06.2021" -o "json"
 ```
